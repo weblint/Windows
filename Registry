@@ -1,0 +1,25 @@
+
+
+Microsoft Office restlos deinstallieren
+Andreas Kroschel, 25.10.2010
+Tags: Office
+
+Kostenloser Leitfaden: Deployment und Konfiguration von Windows 10. Image-Management mit ADK und MDT, Installation in VHDX, u.v.m. Zum Download »
+
+(Anzeige)
+
+Mitunter lässt sich Microsoft Office nicht installieren, weil sich noch Reste der vorherigen Installation auf dem PC befinden, die beim letzten Deinstallationsversuch nicht sauber entfernt wurden. Office 2007 und 2010 können zwar prinzipiell, abgesehen von Outlook, nebeneinander auf der gleichen Maschine installiert werden. Die Testversion eines Office besitzt jedoch in der Regel einen Produktschlüssel, der die erfolgreiche Installation des Vollproduktes anschließend verhindert.
+
+Microsoft bietet als schnellen Fix Uninstaller-Programme für Office 2003, 2007 und 2010 an, welche die jeweiligen Versionen komplett beseitigen, auch wenn dies per Systemsteuerung nicht mehr möglich ist. Dies sollte in den meisten Fällen reichen, damit man die Office-Installation nicht per Hand vom PC kratzen muss.
+
+Dabei handelt es sich um folgende Schritte:
+
+    Löschen des Registry-Schlüssels HKCU\Software\Microsoft\Office,
+    Löschen des Registry-Schlüssels HKLM\Software\Microsoft\Office,
+    Löschen oder Umbenennen von %ProgramFiles%\Microsoft Office und/oder %ProgramFiles(x86)%\Microsoft Office,
+    Löschen oder Umbenennen von %ProgramFiles%\OfficeUpdate und/oder %ProgramFiles(x86)%\OfficeUpdate,
+    Löschen oder Umbenennen von %ProgramFiles%\OfficeUpdate12 und/oder %ProgramFiles(x86)%\OfficeUpdate12,
+    Löschen oder Umbenennen von %ProgramFiles%\OfficeUpdate14 und/oder %ProgramFiles(x86)%\OfficeUpdate14,
+    Neustart des PCs.
+
+
